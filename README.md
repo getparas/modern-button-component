@@ -16,29 +16,25 @@ A beautiful, accessible, and highly customizable button component built with Rea
 
 ## Installation
 
-\`\`\`bash
-npm install modern-button-component
+Clone the GitHub repository and install dependencies:
 
-# or
-
-yarn add modern-button-component
-
-# or
-
-pnpm add modern-button-component
-\`\`\`
+```bash
+git clone https://github.com/your-username/react-tailwind-button-kit.git
+cd react-tailwind-button-kit
+npm install
+```
 
 ## Usage
 
-\`\`\`tsx
+```tsx
 import { Button } from 'modern-button-component';
 import { Plus, Download } from 'lucide-react';
 
 function App() {
-return (
-<div>
-{/_ Basic usage _/}
-<Button>Click me</Button>
+  return (
+    <div>
+      {/* Basic usage */}
+      <Button>Click me</Button>
 
       {/* With variants */}
       <Button variant="primary">Primary</Button>
@@ -59,10 +55,9 @@ return (
       {/* Disabled */}
       <Button disabled>Disabled</Button>
     </div>
-
-);
+  );
 }
-\`\`\`
+```
 
 ## API Reference
 
@@ -119,33 +114,23 @@ Amber gradient for warning actions.
 The component uses Tailwind CSS classes and can be customized by:
 
 1. **Overriding with className prop**
-   \`\`\`tsx
+   ```tsx
    <Button className="bg-purple-500 hover:bg-purple-600">
-   Custom Color
+     Custom Color
    </Button>
-   \`\`\`
+   ```
 
 2. **Extending the variants** (for advanced users)
-   \`\`\`tsx
+   ```tsx
    import { buttonVariants } from 'modern-button-component';
    import { cn } from './utils';
 
-const customButton = cn(
-buttonVariants({ variant: 'primary' }),
-'your-custom-classes'
-);
-\`\`\`
-
-## Requirements
-
-- React 16.8+
-- Tailwind CSS 3.0+
-- TypeScript (optional but recommended)
+   const customButton = cn(
+     buttonVariants({ variant: 'primary' }),
+     'your-custom-classes'
+   );
+   ```
 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-MIT © [Your Name]
