@@ -28,7 +28,7 @@ npm install
 
 ```tsx
 import { Button } from 'modern-button-component';
-import { Plus, Download } from 'lucide-react';
+import { Plus, Download } from 'iconsax-reactjs';
 
 function App() {
   return (
