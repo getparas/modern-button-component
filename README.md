@@ -19,8 +19,8 @@ A beautiful, accessible, and highly customizable button component built with Rea
 Clone the GitHub repository and install dependencies:
 
 ```bash
-git clone https://github.com/your-username/react-tailwind-button-kit.git
-cd react-tailwind-button-kit
+git clone https://github.com/getparas/modern-button-component
+cd modern-button-component
 npm install
 ```
 
